@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/tower1"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/tower_shape"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <ImageView
+                android:id="@+id/redRing"
+                android:layout_width="60sp"
+                android:layout_height="16sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/red_ring" />
+
+            <ImageView
+                android:id="@+id/blueRing"
+                android:layout_width="80sp"
+                android:layout_height="16sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/blue_ring" />
+
+            <ImageView
+                android:id="@+id/orangeRing"
+                android:layout_width="100sp"
+                android:layout_height="16sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/orange_ring" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tower2"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/tower_shape"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="30dp" />
+
+        <LinearLayout
+            android:id="@+id/tower3"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/tower_shape"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/infoText"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Flytt ringene til høyre tårn så raskt som mulig"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/bruktTid"
+            android:layout_width="894dp"
+            android:layout_height="25dp"
+            android:text="Brukt tid: "
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/antallFlytt"
+            android:layout_width="894dp"
+            android:layout_height="20dp"
+            android:text="Antall flytt: "
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Start på nytt"
+            android:textColorHighlight="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
